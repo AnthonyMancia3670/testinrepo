@@ -1,3 +1,4 @@
+//Anthony Mancia n01643670
 package com.example.simpleviews1;
 
 import androidx.appcompat.app.AppCompatActivity;
