@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void btnSaved_clicked (View view) {
         DisplayToast(getString(R.string.Save_btn_Clicked));
+
+
     }
 
     ImageButton imageButton;
@@ -60,16 +63,23 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        }
 
-		/*
+
 		//---Button view---
-		Button btnSave = (Button) findViewById(R.id.btnSave);
-		btnSave.setOnClickListener(new View.OnClickListener()
-		{
-			public void onClick(View v) {
-				DisplayToast("You have clicked the Save button");
-			}
-		});
-        */
+		Button btnSave = findViewById(R.id.btnSave);
+
+        btnSave.setOnClickListener(view -> {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.theweathernetwork.com/en")));
+        });
+
+
+
+//		btnSave.setOnClickListener(new View.OnClickListener()
+//		{
+//			public void onClick(View v) {
+//				DisplayToast("You have clicked the Save button");
+//			}
+//		});
+
 
         //---CheckBox---
         CheckBox checkBox = (CheckBox) findViewById(R.id.chkAutosave);

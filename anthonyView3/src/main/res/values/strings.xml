@@ -9,7 +9,7 @@
     <string name="Option2Checked">Option 2 checked!</string>
     <string name="Checkbox_Checked">CheckBox is checked</string>
     <string name="Checkbox_Unchecked">CheckBox is unchecked</string>
-    <string name="Save_btn_Clicked">You have clicked the Save button1</string>
+    <string name="Save_btn_Clicked">You have clicked the Save button</string>
     <string name="Open_btn_Clicked">You have clicked the Open button</string>
     <string name="dialog_title" translatable="false">anthonylab3\n</string>
     <string name="dialog_message">"Do you want to exit the app? "</string>
@@ -19,5 +19,5 @@
     <string name="image2Toast">Airplane</string>
     <string name="image3Toast">Car</string>
     <string name="image4Toast">Boat</string>
-    <string name="Name" translatable="false">Anthony</string>">
+    <string name="Name">Anthony</string>">
 </resources>
