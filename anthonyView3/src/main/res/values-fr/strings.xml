@@ -18,4 +18,10 @@
     <string name="image2Toast">Avion</string>
     <string name="image3Toast">Voiture</string>
     <string name="image4Toast">Bateau</string>
+    <string name="SwitchTxt">L\'interrupteur est allumé</string>
+    <string name="OpenBtn">Ouvrir</string>
+    <string name="Switch">Changer</string>
+    <string name="autosaveCheckBox">Sauvegarde automatique</string>
+    <string name="txtBox">Entrez du texte</string>
+    <string name="tag">étiqueter</string>
 </resources>

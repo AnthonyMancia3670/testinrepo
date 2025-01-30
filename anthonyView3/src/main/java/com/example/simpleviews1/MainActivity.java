@@ -8,6 +8,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -41,6 +42,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+//        @Override
+//        protected void onPause() {
+//            super.onPause();
+//
+//            // Retrieve values from strings.xml
+//            String tag = getString(R.string.tag);  // Ensure this exists in strings.xml
+//            String message = getString(R.string.Name) + " " + getString(R.string.stdID) ;// Ensure both exist
+//
+//            // Log the message
+//            Log.d(tag, message);
+//        }
+
+
+
+
 
 
         imageButton = findViewById(R.id.btnImg1);
@@ -51,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    showSnackbar(buttonView, "Switch is ON");
+                    showSnackbar(buttonView, getString(R.string.SwitchTxt));
 
                 } else {
                     // The toggle is disabled
@@ -183,6 +199,16 @@ public class MainActivity extends AppCompatActivity {
     private void showSnackbar(View view, String message) {
         Snackbar.make(view, message, Snackbar.LENGTH_INDEFINITE).show();
     }
+
+    public void onPause() {
+        super.onPause();
+
+        String tag = getString(R.string.tag);
+        String message = getString(R.string.Name) + " " + getString(R.string.stdID);
+
+        Log.d(tag, message); // Corrected Log.d() syntax
+    }
+
 
     private void DisplayToast(String msg)
     {

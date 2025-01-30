@@ -19,5 +19,12 @@
     <string name="image2Toast">Airplane</string>
     <string name="image3Toast">Car</string>
     <string name="image4Toast">Boat</string>
-    <string name="Name">Anthony</string>">
+    <string name="Name" translatable="false">Anthony Mancia</string>
+    <string name="SwitchTxt">Switch is ON</string>
+    <string name="OpenBtn">Open</string>
+    <string name="Switch">Switch</string>
+    <string name="autosaveCheckBox">Autosave</string>
+    <string name="txtBox">Enter some text</string>
+    <string name="tag">tag</string>">
+    <string name="stdID" translatable="false">n01643670</string>">
 </resources>

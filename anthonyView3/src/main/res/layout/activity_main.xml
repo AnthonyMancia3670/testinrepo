@@ -13,7 +13,7 @@
     <Button android:id="@+id/btnOpen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Open" />
+        android:text="@string/OpenBtn" />
 
     <ImageButton android:id="@+id/btnImg1"
         android:layout_width="fill_parent"
@@ -25,7 +25,7 @@
         android:id="@+id/txtText"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter some text"
+        android:hint="@string/txtBox"
         android:maxLength="10"
         android:inputType="textPersonName"
         android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
@@ -34,7 +34,7 @@
     <CheckBox android:id="@+id/chkAutosave"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Autosave" />
+        android:text="@string/autosaveCheckBox" />
 
     <CheckBox android:id="@+id/star"
         style="?android:attr/starStyle"
@@ -82,6 +82,6 @@
         android:id="@+id/switch1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Switch" />
+        android:text="@string/Switch" />
 
 </LinearLayout>
