@@ -1,5 +1,17 @@
-<!--Anthony Mancia no1643670 -->
 <?xml version="1.0" encoding="utf-8"?>
+<!--Anthony Mancia no1643670 -->
 <resources>
-    <string name="app_name">Simple Views 1</string>
+    <string name="hello">Bonjour, SimpleViews1Activity</string>
+    <string name="save">Sauvegarder</string>
+    <string name="Toggle_On">Le bouton bascule est activé</string>
+    <string name="Toggle_Off">Le bouton bascule est désactivé</string>
+    <string name="Option1Checked">Option 1 sélectionnée !</string>
+    <string name="Option2Checked">Option 2 sélectionnée !</string>
+    <string name="Checkbox_Checked">La case à cocher est cochée</string>
+    <string name="Checkbox_Unchecked">La case à cocher est décochée</string>
+    <string name="Save_btn_Clicked">Vous avez cliqué sur le bouton Sauvegarder</string>
+    <string name="Open_btn_Clicked">Vous avez cliqué sur le bouton Ouvrir</string>
+    <string name="dialog_message">Voulez-vous quitter l\'application ?</string>
+    <string name="yes_button">Oui</string>
+    <string name="no_button">Non</string>
 </resources>

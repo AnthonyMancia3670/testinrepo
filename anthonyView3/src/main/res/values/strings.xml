@@ -1,6 +1,18 @@
 <!--Anthony Mancia n01643670-->
 <resources>
-    <string name="app_name">Simple Views 1</string>
+    <string name="app_name" translatable="false">Simple Views 1</string>
     <string name="hello">Hello World, SimpleViews1Activity!</string>
     <string name="save">Save</string>
+    <string name="Toggle_On">Toggle button is On</string>
+    <string name="Toggle_Off">Toggle button is Off</string>
+    <string name="Option1Checked">Option 1 checked!</string>
+    <string name="Option2Checked">Option 2 checked!</string>
+    <string name="Checkbox_Checked">CheckBox is checked</string>
+    <string name="Checkbox_Unchecked">CheckBox is unchecked</string>
+    <string name="Save_btn_Clicked">You have clicked the Save button1</string>
+    <string name="Open_btn_Clicked">You have clicked the Open button</string>
+    <string name="dialog_title" translatable="false">anthonylab3\n</string>
+    <string name="dialog_message">"Do you want to exit the app? "</string>
+    <string name="yes_button">"Yes "</string>
+    <string name="no_button">No</string>
 </resources>
