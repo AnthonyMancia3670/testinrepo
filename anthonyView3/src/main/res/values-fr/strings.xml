@@ -14,4 +14,8 @@
     <string name="dialog_message">Voulez-vous quitter l\'application ?</string>
     <string name="yes_button">Oui</string>
     <string name="no_button">Non</string>
+    <string name="image1Toast">Hélicoptère</string>
+    <string name="image2Toast">Avion</string>
+    <string name="image3Toast">Voiture</string>
+    <string name="image4Toast">Bateau</string>
 </resources>

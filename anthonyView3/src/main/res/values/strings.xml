@@ -15,4 +15,9 @@
     <string name="dialog_message">"Do you want to exit the app? "</string>
     <string name="yes_button">"Yes "</string>
     <string name="no_button">No</string>
+    <string name="image1Toast">Helicopter</string>
+    <string name="image2Toast">Airplane</string>
+    <string name="image3Toast">Car</string>
+    <string name="image4Toast">Boat</string>
+    <string name="Name" translatable="false">Anthony</string>">
 </resources>

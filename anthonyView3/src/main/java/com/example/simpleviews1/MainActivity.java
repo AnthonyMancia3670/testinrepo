@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -21,11 +22,23 @@ public class MainActivity extends AppCompatActivity {
         DisplayToast(getString(R.string.Save_btn_Clicked));
     }
 
+    ImageButton imageButton;
+    int counter = 1;
+
+
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
+
+        imageButton = findViewById(R.id.btnImg1);
+        imageButton.setOnClickListener(this::onClick);
+
+
 
 
 
@@ -104,21 +117,44 @@ public class MainActivity extends AppCompatActivity {
         builder.setTitle(getString(R.string.dialog_title));
         builder.setMessage(getString(R.string.dialog_message));
 
-        // Use a valid icon from the drawable folder (ensure the icon exists)
+
         builder.setIcon(R.drawable.exitsign);
 
-        // Yes Button - Exit App
+
         builder.setPositiveButton(getString(R.string.yes_button), (dialog, which) -> finish());
 
-        // No Button - Stay in App
+
         builder.setNegativeButton(getString(R.string.no_button), (dialog, which) -> dialog.dismiss());
 
-        // Prevent user from dismissing the dialog without answering
+
         builder.setCancelable(false);
 
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
     }
+
+    public void onClick(View view) {
+        if (counter == 1) {
+            imageButton.setImageResource(R.drawable.helicopter);
+            DisplayToast(getString(R.string.Name) + "+ " + getString(R.string.image1Toast));
+        } else if (counter == 2) {
+            imageButton.setImageResource(R.drawable.plane);
+            DisplayToast(getString(R.string.Name) + "+ " + getString(R.string.image2Toast));
+        } else if (counter == 3) {
+            imageButton.setImageResource(R.drawable.car);
+            DisplayToast(getString(R.string.Name) + "+ " + getString(R.string.image3Toast));
+        } else if (counter == 4) {
+            imageButton.setImageResource(R.drawable.boat);
+            DisplayToast(getString(R.string.Name) + "+ " + getString(R.string.image4Toast));
+            counter = 0; // Reset after 4 clicks
+        }
+
+        counter++;
+    }
+
+
+
+
 
     private void DisplayToast(String msg)
     {
