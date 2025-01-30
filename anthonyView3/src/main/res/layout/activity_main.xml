@@ -20,9 +20,16 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_launcher" />
 
-    <EditText android:id="@+id/txtName"
+
+    <EditText
+        android:id="@+id/txtText"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="Enter some text"
+        android:maxLength="10"
+        android:inputType="textPersonName"
+        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
+
 
     <CheckBox android:id="@+id/chkAutosave"
         android:layout_width="fill_parent"
