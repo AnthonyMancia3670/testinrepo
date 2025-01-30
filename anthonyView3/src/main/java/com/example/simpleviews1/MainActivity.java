@@ -5,6 +5,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -32,13 +33,19 @@ public class MainActivity extends AppCompatActivity {
         //---Button view---
         Button btnOpen = (Button) findViewById(R.id.btnOpen);
         //register the button with an event listener
-        btnOpen.setOnClickListener(new View.OnClickListener()
-        { //anonymous class
-            //implement your event handler method
-            public void onClick(View v) {
-                DisplayToast(getString(R.string.Open_btn_Clicked));
-            }
+        btnOpen.setOnClickListener(view -> {
+            startActivity(new Intent(android.provider.Settings.ACTION_SETTINGS));
+
+
         });
+
+//        btnOpen.setOnClickListener(new View.OnClickListener()
+//        { //anonymous class
+//            //implement your event handler method
+//            public void onClick(View v) {
+//                DisplayToast(getString(R.string.Open_btn_Clicked));
+//            }
+//        }
 
 		/*
 		//---Button view---
